@@ -13,7 +13,7 @@ ENV PATH="/venv/bin:$PATH"
 
 # Atualize o pip e instale os pacotes Python
 RUN pip install --upgrade pip && \
-    pip install openai langchain PyPDF2 faiss-cpu tiktoken langchain_openai langchain-community unidecode python-dotenv
+    pip install openai langchain PyPDF2 faiss-cpu tiktoken langchain_openai langchain-community unidecode 
 
 
 # Limpe o cache de apt

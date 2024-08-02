@@ -14,23 +14,13 @@ from langchain_community.llms import OpenAI
 from langchain.vectorstores import FAISS
 from langchain.embeddings import OpenAIEmbeddings
 import tiktoken
-from dotenv import load_dotenv
 
 # Define o caminho para as pastas
 pasta_arquivos = '/app/arquivos'
 pasta_imagens = '/app/arquivos'
 
-# Carrega as variáveis de ambiente do arquivo .env
-load_dotenv()
-
-# Recupera a chave da API das variáveis de ambiente
-api_key = os.getenv("OPENAI_API_KEY")
-
-if not api_key:
-    raise ValueError("A chave da API OpenAI não está definida. Configure a variável de ambiente 'OPENAI_API_KEY'.")
-
 # Define a chave da API
-os.environ["OPENAI_API_KEY"] = api_key
+os.environ["OPENAI_API_KEY"] = "sk-proj-cniNmPS1HFBlV9SrGS7lT3BlbkFJLMOCF2AbKGsSuKR7NxBl"
 
 # Listar todos os arquivos na pasta
 arquivos = os.listdir(pasta_arquivos)
