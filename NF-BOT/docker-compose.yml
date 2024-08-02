@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  bot-nf:
+    build: .
+    container_name: bot_nf_container
+    volumes:
+      - ./arquivos:/app/arquivos
+    env_file:
+      - .env
+    command: python3 main.py
