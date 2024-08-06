@@ -1,0 +1,1 @@
+Local do documento a ser armazenado é na pasta do /apps/arquivos do docker, após passar pela execução da API ele deve ser apagado em sequencia, o algoritmo somente funciona se houver um unico arquivo na pasta arquivos
