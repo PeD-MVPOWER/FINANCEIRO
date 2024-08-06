@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  bot-nf:
+    build: .
+    container_name: bot_nf_container
+    volumes:
+      - ./arquivos:/app/arquivos
+    environment:
+      - OPENAI_API_KEY=sk-proj-cniNmPS1HFBlV9SrGS7lT3BlbkFJLMOCF2AbKGsSuKR7NxBl
+    command: python3 main.py
